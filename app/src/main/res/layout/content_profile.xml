@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.codepath.apps.mysimpletweets.activities.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tagline"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tvTagline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTagline"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:id="@+id/llFollowerContainer">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Followers"
+            android:id="@+id/btnFollowers"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="115 Following"
+            android:layout_marginLeft="32dp"
+            android:id="@+id/btnFollowing"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_margin="@dimen/common_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llFollowerContainer"
+        android:id="@+id/flContainer"/>
+
+</RelativeLayout>
